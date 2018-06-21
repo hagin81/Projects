@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .mars_weather {
+      border: 1px solid grey;
+      padding: 10px;
+  }
+
+  .mars_facts {
+      padding-top: 20px;
+  }
+  
+  </style>
+</head>
+<body>
+
+<div class="container">
+        <div class="jumbotron text-center">
+                <h1>Mission to Mars</h1>
+                <a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a>
+                </p>
+              </div>
+            {% for i in data %}
+              <div class="col-lg-12">
+                  <h2>Latest Mars News</h2>
+                  <b>{{ i['data']['news_title'] }}</b><br>
+                  {{ i['data']['news_p'] }}                                   
+              </div>
+
+               
+              <div class="row">
+              <div class="col-lg-8">
+                  <h2> Featured Mars Image </h2>
+                  <img class="img-responsive" src="{{ i['data']['featured_image_url']}}" />
+              </div>
+              <div class="col-lg-4">
+                  <div class="mars_weather">
+                  <b>Current Weather on Mars </b><br>
+                    {{ i['data']['mars_weather'] }}<br>
+                  </div>
+                
+                  <div class="mars_facts">
+                  <b>Mars Facts</b><br>
+                  {{ i['data']['table_html']|safe }}<br>
+                  </div>
+              </div>
+              </div>
+
+              <hr>
+              <div class="row"></div>
+              <h2 class="text-center"> Mars Hemispheres </h2>
+              {% for a in i['data']['hemisphere_image_urls'] %}
+              
+                    <div class="col-lg-6">
+                      <div class="thumbnail">
+                        <a href="{{ a['img_url'] }}">
+                          <img src="{{ a['img_url'] }}" alt="Lights" style="width:100%">
+                          <div class="caption">
+                            <p>{{ a['title'] }}</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+               
+                    
+
+            {% endfor %}
+        </div>
+        {% endfor %}
+</div>
+
+</body>
+</html>
