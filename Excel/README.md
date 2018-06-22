@@ -2,7 +2,7 @@
 
 I analyzed 4115 Kickstarted campaigns to find the number of successful/failed campaigns and also found the categories that did best on the platform. 
 
-![kickstarter campaigns] (https://github.com/hagin81/Projects/blob/master/Excel/kickstarter-campaigns.png?raw=true) 
+![kickstarter campaigns](https://github.com/hagin81/Projects/blob/master/Excel/kickstarter-campaigns.png?raw=true) 
 
 Out of 4115 campaigns, 53% were successful, 38% failed and 9% was canceled 
 
