@@ -2,12 +2,12 @@
 
 I analyzed 4115 Kickstarted campaigns to find the number of successful/failed campaigns and also found the categories that did best on the platform. 
 
-![kickstarter-campaigns] ( https://github.com/hagin81/Projects/blob/master/Excel/kickstarter-campaigns.png ) 
+![kickstarter-campaigns] (https://github.com/hagin81/Projects/blob/master/Excel/kickstarter-campaigns.png) 
 
 Out of 4115 campaigns, 53% were successful, 38% failed and 9% was canceled 
 
 The **theather** category was the most successful 
-![kickstarted-categories] ( https://github.com/hagin81/Projects/blob/master/Excel/kickstarter-categories.png ) 
+![kickstarter-categories] (https://github.com/hagin81/Projects/blob/master/Excel/kickstarter-categories.png) 
 
 In conclusion, the analysis answers the following questions 
 
