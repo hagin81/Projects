@@ -8,7 +8,7 @@ Out of 4115 campaigns, 53% were successful, 38% failed and 9% was canceled
 
 The **theather** category was the most successful 
 
-![kickstarter categories]  (https://raw.githubusercontent.com/hagin81/Projects/master/Excel/kickstarter-categories.png)
+![kickstarter categories](https://raw.githubusercontent.com/hagin81/Projects/master/Excel/kickstarter-categories.png)
 
 In conclusion, the analysis answers the following questions 
 
